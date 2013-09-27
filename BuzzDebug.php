@@ -32,7 +32,7 @@ class BuzzDebug
 
         $result = $this->browser->get($uri, $headers);
 
-        $this->stopwatch->stop($name, $context);
+        $this->stopwatch->stop($this->name, $this->context);
 
         return $result;
     }
