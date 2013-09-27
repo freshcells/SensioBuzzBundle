@@ -28,7 +28,7 @@ class BuzzDebug
      **/
     public function get($uri, $headers)
     {
-        $this->stopwatch->start($name, $context);
+        $this->stopwatch->start($this->name, $this->context);
 
         $result = $this->browser->get($uri, $headers);
 
