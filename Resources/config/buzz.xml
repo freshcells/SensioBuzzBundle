@@ -24,7 +24,7 @@
           <argument type="service" id="buzz.message_factory" />
         </service>
 
-        <service id="buzz.debug" class="%buzz.debug.class">
+        <service id="buzz.debug" class="%buzz.debug.class%">
             <argument type="service" id="buzz" />
             <argument type="service" id="debug.stopwatch" />
         </service>
