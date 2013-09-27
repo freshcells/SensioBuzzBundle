@@ -8,6 +8,7 @@
         <parameter key="buzz.client.class">Buzz\Client\Curl</parameter>
         <parameter key="buzz.message_factory.class">Buzz\Message\Factory\Factory</parameter>
         <parameter key="buzz.browser.class">Buzz\Browser</parameter>
+        <parameter key="buzz.debug.class">Sensio\Bundle\BuzzBundle\BuzzDebug</parameter>
     </parameters>
 
     <services>
@@ -21,6 +22,11 @@
         <service id="buzz" class="%buzz.browser.class%">
           <argument type="service" id="buzz.client" />
           <argument type="service" id="buzz.message_factory" />
+        </service>
+
+        <service id="buzz.debug" class="%buzz.debug.class">
+            <argument type="service" id="buzz" />
+            <argument type="service" id="debug.stopwatch" />
         </service>
     </services>
 </container>
