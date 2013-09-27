@@ -1,5 +1,5 @@
 <?php
-namespace Sension\Bundle\BuzzBundle;
+namespace Sensio\Bundle\BuzzBundle;
 
 use Buzz\Browser;
 use Symfony\Component\Stopwatch\Stopwatch;
