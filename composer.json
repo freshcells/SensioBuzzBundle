@@ -1,5 +1,5 @@
 {
-    "name": "freshcells/buzz-bundle",
+    "name": "sensio/buzz-bundle",
     "description": "Bundle around the Buzz HTTP client",
     "type": "symfony-bundle",
     "keywords": ["http client", "buzz"],
